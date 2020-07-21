@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<title>English Football League</title>
+	<meta name="description" content="English Football League"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/materialize.min.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="apple-touch-icon" href="assets/icons/icon-128x128.png">
+	<link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+</head>
+</head>
+<body>
+	<!-- Navigasi -->
+	<div class="progress custom-prog">
+		<div class="indeterminate"></div>
+	</div>
+	<nav class="custom-border" role="navigation">
+		<div class="nav-wrapper container">
+			<a href="#" class="brand-logo purple-text right" id="logo-container">player info</a>
+			<div class="sidenav-trigger back-button purple-text" data-target="nav-mobile">
+				<i class="material-icons">arrow_back</i>
+			</div>
+			</a>
+			<ul class="topnav right hide-on-med-and-down"></ul>
+			<ul class="sidenav" id="nav-mobile"></ul>
+		</div>
+    </nav>
+	<!-- Akhir Navigasi -->
+	<div class="container" id="body-content"></div>
+	
+	<footer class="page-footer custom-footer white">
+		<div class="footer-copyright white">
+			<div class="container black-text">
+				Made by Luissa Nugraha
+			</div>
+		</div>
+	</footer>
+	
+	<script
+      type="text/javascript"
+      src="https://unpkg.com/snarkdown@1.0.2/dist/snarkdown.umd.js"
+    ></script>
+	<script src="js/materialize.min.js"></script>
+	<script src="js/view/player-info.js"></script>
+	<script src="js/register-sw.js"></script>
+	<script>
+		
+		document.addEventListener("DOMContentLoaded", function() {
+			getPlayerInfo();
+			backButtonClick();
+		})
+		
+		
+	</script>
+</body>
+</html>
